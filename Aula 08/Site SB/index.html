@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Antes e Depois</title>
+</head>
+<body>
+    <section id="works">
+        <!-- link -->
+        <a class="main" href="#form">
+          GET A FREE QUOTE
+          <svg viewBox="0 0 35 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0001 0.476546C25.3428 -0.167852 24.2876 -0.157404 23.6432 0.499881C22.9988 1.15717 23.0093 2.21239 23.6665 2.85679L29.2526 8.33334H1.66667C0.746192 8.33334 0 9.07953 0 10C0 10.9205 0.746192 11.6667 1.66667 11.6667H29.2526L23.6665 17.1432C23.0093 17.7876 22.9988 18.8428 23.6432 19.5001C24.2876 20.1574 25.3428 20.1679 26.0001 19.5235L34.5001 11.1901C34.8198 10.8767 35 10.4477 35 10C35 9.55225 34.8198 9.12333 34.5001 8.80988L26.0001 0.476546Z"/>
+          </svg>
+        </a>
+        <div class="container">
+          <!-- title -->
+          <div class="title">
+            <h2>Come see <span>our work</span></h2>
+            <!-- actions arrows -->
+            <p><span id="actual-page">01</span> / <span id="total-page">04</span></p>
+            <div class="actions">
+              <button type="button" class="prev-slide">
+                <img src="https://arquivos-mtjax.nyc3.cdn.digitaloceanspaces.com/images/arrow-carousel-prev.svg">
+              </button>
+              <button type="button" class="next-slide">
+                <img src="https://arquivos-mtjax.nyc3.cdn.digitaloceanspaces.com/images/arrow-carousel-next.svg">
+              </button>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="items">
+              <!-- item -->
+              <div class="item first">
+                <div class='img background' style="background-image: url('https://sb.skylensbi.com/wp-content/uploads/2023/11/After-1.png')"></div>
+                <div class='img foreground' style="background-image: url('https://sb.skylensbi.com/wp-content/uploads/2023/11/Before-1.png')"></div>
+                <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+                <div class="button-slider"></div>
+              </div>
+              <!-- item -->
+              <div class="item second">
+                <div class='img background' style="background-image: url('https://sb.skylensbi.com/wp-content/uploads/2023/11/After-2.png')"></div>
+                <div class='img foreground' style="background-image: url('https://sb.skylensbi.com/wp-content/uploads/2023/11/Before-2.png')"></div>
+                <input type="range" min="1" max="100" value="50" class="slider second" name='slider' id="slider second">
+                <div class="button-slider"></div>
+              </div>
+              <!-- item -->
+              <div class="item third">
+                <div class='img background' style="background-image: url('https://sb.skylensbi.com/wp-content/uploads/2023/11/After-3.png')"></div>
+                <div class='img foreground' style="background-image: url('https://sb.skylensbi.com/wp-content/uploads/2023/11/Before-3.png')"></div>
+                <input type="range" min="1" max="100" value="50" class="slider third" name='slider' id="slider third">
+                <div class="button-slider"></div>
+              </div>
+              <!-- item -->
+              <div class="item fourth">
+                <div class='img background' style="background-image: url('../arquivos-mtjax.nyc3.cdn.digitaloceanspaces.com/images/foto-1-depois.png')"></div>
+                <div class='img foreground' style="background-image: url('../arquivos-mtjax.nyc3.cdn.digitaloceanspaces.com/images/foto-1-antes.png')"></div>
+                <input type="range" min="1" max="100" value="50" class="slider fourth" name='slider' id="slider fourth">
+                <div class="button-slider"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

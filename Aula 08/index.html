@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nome">Digite o seu nome:</label><br>
+            <input id="nome" nome="nome" placeholder="Digite seu nome...">
+        </div>
+        <div>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" nome="email" placeholder="Digite seu email...">
+        </div>
+        <div>
+            <label for="senha">Senha</label><br>
+            <input type="password" id="senha" nome="senha">
+        </div>
+        <div>
+            <label for="data">Data</label>
+            <input type="date" id="data" nome="data">
+        </div>
+        <div>
+            <label>Estrangeiro?</label>
+            <input type="radio" name="estrangeiro" id="estrangeirosim" value="sim">
+            <label for="estrangeirosim">Sim</label>
+            <input type="radio" name="estrangeiro" id="estrangeironao" value="nao">
+            <label for="estrangeironao">Não</label>
+        </div>
+        <div>
+            <input type="checkbox" id="condorda" name="concorda">
+            <label for="concorda">Concorda com os termos de uso?</label>
+        </div>
+        <div>
+            <Label for="foto">Foto</Label>
+            <input type="file" id="foto" name="foto">
+        </div>
+        <div>
+            <label for="observacoes">Observações</label>
+            <textarea id="observacoes" name="observacoes"></textarea>
+        </div>
+        <div>
+            <label for="profissao">Profissão:</label>
+            <select>
+                <option value="dev">Desenvolvedor de Software</option>
+                <option value="qa">QA</option>
+                <option value="PM">Project Manager</option>
+                <option value="PO">PO</option>
+            </select>
+        </div>
+        <div>
+            <button type="button">Cancelar</button>
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+    
+</body>
+</html>

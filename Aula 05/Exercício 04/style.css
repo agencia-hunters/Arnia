@@ -1,0 +1,24 @@
+* {
+    padding: 0px;
+    font-family:Roboto, sans-serif;
+}
+
+.content {
+    width: 50vw;
+    height: 1vh;
+    border: 0px;
+    padding: 10em
+}
+
+.img {
+    width: 200px;
+    height: 60px;
+}
+
+h1 {
+    color: #7B32DF;
+}
+
+h2 {
+    color: #F1B154;
+}

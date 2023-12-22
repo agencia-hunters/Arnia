@@ -1,0 +1,25 @@
+*{
+    font-size: 12px;
+    margin: 0;
+    padding: 0px;
+}
+.conteudo1 {
+    background-color: red;
+    width: 100px;
+    height: 400px;
+    padding: 20px 10px 30px 10px;
+}
+.conteudo2 {
+    background-color: blue;
+    width: 50%;
+    height: 400px;
+}
+.conteudo3 {
+    background-color: green;
+    width: 50vw;
+    height: 20vh;
+}
+.conteudo4 {
+    background-color: aquamarine;
+    width: 50%;
+}

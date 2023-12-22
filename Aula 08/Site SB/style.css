@@ -1,0 +1,242 @@
+.section#works {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--cor-azul-escuro);
+    background-image: linear-gradient(to bottom, rgba(22, 30, 34, 0.5), rgba(22, 30, 34, 1));
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  section#works a.main {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: #DE452A;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    font-family: var(--bold);
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  section#works a.main svg {
+    width: 35px;
+    height: 35px;
+    margin: 0 0 0 20px;
+    fill: #FFFFFF;
+    transition: 0.3s all;
+  }
+  section#works a.main:hover {
+    background-size: 100%;
+  }
+  section#works a.main:hover svg {
+    transform: scale(1.3);
+  }
+  section#works .container {
+    width: 100%;
+    max-width: 900px;
+    min-width: 900px;
+    margin: 50px 0;
+  }
+  section#works .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+  section#works .title h2 {
+    font-family: var(--bold);
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 650px;
+    line-height: 1.3;
+    z-index: 1;
+  }
+  section#works .title h2 span {
+    background-image: linear-gradient(to right, #DE452A, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+  }
+  section#works .title p {
+    font-family: var(--light);
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    color: #FFFFFF;
+    margin: 0 30px 0 auto;
+  }
+  section#works .title p span#total-page {
+    opacity: 0.3;
+  }
+  section#works .title .actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  section#works .title .actions button {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.3s all;
+  }
+  section#works .title .actions button img {
+    width: 100%;
+  }
+  section#works .title .actions button:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  section#works .slide {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  section#works .slide .items {
+    display: flex;
+    transition: 0.3s all;
+  }
+  section#works .slide .item {
+    position: relative;
+    width: 900px;
+    height: 600px;
+  }
+  section#works .slide .item .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section#works .slide .item .foreground {
+    width: calc(50% - 2px);
+  }
+  section#works .slide .item .slider {
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    margin: 0;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#works .slide .item .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 600px;
+    background: white;
+    cursor: pointer;
+  }
+  section#works .slide .item .slider::-moz-range-thumb {
+    width: 5px;
+    height: 600px;
+    background: white;
+    cursor: pointer;
+  }
+  section#works .slide .item .button-slider {
+    pointer-events: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    left: calc(50% - 5px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  section#works .slide .item .button-slider:after {
+    content: "";
+    padding: 3px;
+    display: inline-block;
+    border: solid #5D5D5D;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+  }
+  section#works .slide .item .button-slider:before {
+    content: "";
+    padding: 3px;
+    display: inline-block;
+    border: solid #5D5D5D;
+    border-width: 0 2px 2px 0;
+    transform: rotate(135deg);
+  }
+  @media screen and (max-width: 1000px) {
+    section#works .title h2 {
+        font-size: 20px
+      }
+    section#works {
+      padding: 50px 20px 50px 20px;
+    }
+    section#works a.main {
+      width: 300px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    section#works a.main svg {
+      width: 25px;
+      height: 25px;
+      margin: 0 0 0 15px;
+    }
+    section#works .container {
+      margin: 0;
+      max-width: unset;
+      min-width: unset;
+    }
+    section#works .title {
+      flex-direction: column;
+      margin: 30px 0 40px 0;
+    }
+    section#works .title h2 {
+      max-width: 200px;
+    }
+    section#works .title p {
+      margin: 0;
+      position: absolute;
+      top: 200px;
+    }
+    section#works .title .actions {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      margin: 20px 0 0 0;
+    }
+    section#works .slide .item {
+      position: relative;
+      width: calc(100vw - 40px);
+      height: calc(100vw - 40vw);
+      overflow: hidden;
+    }
+  }

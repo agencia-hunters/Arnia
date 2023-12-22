@@ -1,0 +1,11 @@
+
+.quadrado {
+    width: 150px;
+    height: 100px;
+    border-top: 2px blue dashed;
+    border-left: 2px green dotted;
+    border-bottom: 2px red double;
+    color: pink;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
